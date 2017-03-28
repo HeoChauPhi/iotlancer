@@ -1,0 +1,18 @@
+.block-iot-products {
+  .views-iot-products {
+    > .view-content {
+      align-items: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+
+      > .views-row {
+        flex-shrink: 1;
+        margin: rem(1px);
+      }
+    }
+
+    ul.pager {
+      padding: 0;
+    }
+  }
+}

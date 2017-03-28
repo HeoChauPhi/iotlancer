@@ -1,0 +1,10 @@
+.main-container {
+  padding-bottom: rem(30px);
+}
+
+.field-type-text-with-summary,
+.field-name-body {
+  @include opensans;
+  font-size: rem(15px);
+  line-height: rem(26px);
+}

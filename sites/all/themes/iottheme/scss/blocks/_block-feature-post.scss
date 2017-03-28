@@ -1,0 +1,105 @@
+.block-feature-post {
+  @extend .clearfix;
+  min-height: rem(462px);
+
+  .field-name-field-block-get-nodes {
+    > .field-items {
+      @extend .clearfix;
+
+      .field-type-image {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        img {
+          height: 100%;
+          visibility: hidden;
+          width: 100%;
+        }
+      }
+
+      .group-media-content {
+        bottom: 0;
+        color: $white;
+        left: 0;
+        padding: rem(20px);
+        position: absolute;
+        right: 0;
+        z-index: 9;
+
+        &:before {
+          @include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)));
+          bottom: 0;
+          content: "";
+          height: 200%;
+          left: 0;
+          position: absolute;
+          right: 0;
+          width: 100%;
+          z-index: -1;
+        }
+      }
+
+      .field-name-title h2 {
+        margin: 0;
+      }
+
+      .field-name-post-date {
+        font-size: rem(11px);
+      }
+
+      > .field-item {
+        bottom: 0;
+        float: left;
+        height: rem(198px);
+        margin-left: rem(3px);
+        margin-top: rem(3px);
+        overflow: hidden;
+        position: relative;
+        width: rem(265px);
+
+        &:hover {
+          //background-size: 100% !important;
+        }
+
+        > .contextual-links-region {
+          position: static;
+        }
+
+        .group-media-content {
+          .field-name-title h2 {
+            font-size: rem(16px);
+          }
+        }
+
+        &:nth-child(4n+1) {
+          height: rem(462px);
+          left: 0;
+          margin: 0;
+          top: 0;
+          width: rem(532px);
+
+          .group-media-content {
+            .field-name-title h2 {
+              font-size: rem(27px);
+            }
+          }
+        }
+
+        &:nth-child(4n+2) {
+          float: right;
+          height: rem(261px);
+          margin: 0;
+          top: 0;
+          width: rem(533px);
+
+          .group-media-content {
+            .field-name-title h2 {
+              font-size: rem(24px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

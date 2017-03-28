@@ -1,0 +1,47 @@
+.views-content-inside {
+  > .view-content {
+    .views-row {
+      position: relative;
+    }
+
+    .group-media-image {
+      text-align: center;
+    }
+
+    .group-media-content {
+      bottom: 0;
+      color: $white;
+      left: 0;
+      padding: rem(20px);
+      position: absolute;
+      right: 0;
+      z-index: 9;
+
+      &:before {
+        @include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)));
+        bottom: 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+
+    .views-field-title {
+      font-size: rem(17px);
+      font-weight: 700;
+
+      a {
+        color: $white;
+      }
+    }
+
+    .views-field-created {
+      color: $gray-aa;
+      font-size: rem(11px);
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.block-trending-now {
+  @extend .clearfix;
+  margin-bottom: rem(24px);
+
+  .pane-title {
+    background-color: $color-six;
+    color: $white;
+    float: left;
+    font-size: rem(12px);
+    line-height: rem(16px);
+    margin: 0;
+    padding: rem(5px 10px);
+    text-transform: uppercase;
+
+    &:after {
+      display: none !important;
+    }
+  }
+}
+
+.views-slide-oneitem {
+  > .view-content {
+    > .views-row {
+      display: none;
+      float: left;
+    }
+
+    .slick-slide {
+      padding: rem(2px 66px 2px 10px);
+    }
+
+    a {
+      color: $gray-11;
+      font-size: rem(15px);
+
+      &:hover {
+        color: $color-link;
+        text-decoration: none;
+      }
+    }
+
+    &.slick-slider {
+      position: relative;
+
+      > .slick-arrow {
+        @extend .fa;
+        background-color: transparent;
+        border: rem(1px) solid $color-line;
+        bottom: 0;
+        height: rem(25px);
+        line-height: rem(23px);
+        position: absolute;
+        right: 0;
+        text-indent: rem(-99999px);
+        top: 0;
+        width: rem(25px);
+        z-index: 9;
+
+        &:before {
+          float: left;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          text-align: center;
+          text-indent: 0;
+          top: 0;
+          width: 100%;
+        }
+
+        &.slick-prev {
+          @extend .fa-angle-left;
+          margin-right: rem(7px);
+          right: rem(25px);
+        }
+
+        &.slick-next {
+          @extend .fa-angle-right;
+        }
+      }
+    }
+  }
+}

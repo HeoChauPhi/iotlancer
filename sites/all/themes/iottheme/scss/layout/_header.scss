@@ -1,0 +1,75 @@
+.header-top {
+  background-color: $bg-header-top;
+  color: $white;
+  padding: rem(4px 0);
+}
+
+.region-header-top {
+  @extend .clearfix;
+}
+
+.navbar-header {
+  position: relative;
+  z-index: 998;
+}
+
+header.navbar-default {
+  background-color: $bg-header;
+  border-radius: 0;
+  border: none;
+  color: $white;
+  min-height: rem(80px);
+
+  &:before,
+  &:after {
+    content: "";
+    height: 80px;
+    position: absolute;
+    top: 0%;
+    opacity: 0.5;
+  }
+
+  &:before {
+    background: url('../images/header-left.png') no-repeat scroll center center transparent;
+    left: -10%;
+    width: 407px;
+  }
+
+  &:after {
+    background: url('../images/header-right.png') no-repeat scroll center center transparent;
+    right: 0;
+    width: 252px;
+  }
+
+  > .container {
+    position: relative;
+    z-index: 999;
+  }
+
+  /* Logo. */
+  .logo {
+    margin: 0;
+
+    img {
+      max-height: rem(80px);
+    }
+  }
+
+  /* Block Search. */
+  .region-navigation {
+    float: right;
+    min-height: rem(80px);
+
+    .dropdow-search-buttom {
+      cursor: pointer;
+      font-size: rem(22px);
+      height: 100%;
+      line-height: rem(80px);
+    }
+
+    .block-search {
+      display: none;
+      position: absolute;
+    }
+  }
+}

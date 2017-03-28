@@ -1,0 +1,32 @@
+.views-post-attach-to-page {
+  margin-bottom: rem(50px);
+
+  > .view-header {
+    margin-bottom: rem(35px);
+  }
+
+  > .view-content {
+    @extend .clearfix;
+
+    .views-row {
+      width: 49.9%;
+    }
+
+    .views-row-first {
+      float: left;
+    }
+
+    .views-row-last {
+      float: right;
+    }
+
+    .views-field-title {
+      font-size: rem(27px);
+      font-weight: normal;
+    }
+
+    .views-field-created {
+      color: $white;
+    }
+  }
+}

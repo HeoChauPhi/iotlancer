@@ -1,0 +1,25 @@
+.views-taxonomy-list-term {
+  > .view-content {
+    @extend .clearfix;
+
+    > .views-row {
+      float: left;
+      margin-right: rem(3px);
+
+      a {
+        border: rem(1px) solid $color-line;
+        color: $color-base;
+        display: block;
+        font-size: rem(11px);
+        padding: rem(2px 7px);
+
+        &:hover {
+          background-color: $color-six;
+          border-color: $color-six;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

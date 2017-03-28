@@ -1,0 +1,55 @@
+.views-attach-to-menu {
+  @extend .clearfix;
+  position: relative;
+
+  > .view-filters {
+    box-shadow: rem(-1px 0 0 0) $color-line-menu inset;
+    float: left;
+    font-size: rem(13px);
+    padding-bottom: rem(22px);
+    padding-top: rem(22px);
+    width: 21%;
+
+    .views-exposed-form {
+      .views-exposed-widget {
+        float: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .form-item {
+        text-align: right;
+
+        > .form-item {
+
+        }
+
+        a {
+          border: rem(1px) solid transparent;
+          display: block;
+          font-weight: 700;
+          line-height: 25px;
+          padding: rem(5px 22px);
+
+          &.active {
+            background-color: $white;
+            border-bottom-color: $color-line-menu;
+            border-top-color: $color-line-menu;
+          }
+        }
+      }
+    }
+  }
+
+  > .view-content {
+    float: left;
+    padding-top: rem(22px);
+    width: 79%;
+  }
+
+  > ul.pager {
+    bottom: 0;
+    left: 21%;
+    position: absolute;
+  }
+}

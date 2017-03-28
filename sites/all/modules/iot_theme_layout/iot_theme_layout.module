@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Responsive panels layouts for Panopoly.
+ */
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function iot_theme_layout_ctools_plugin_directory($module, $plugin) {
+  return 'plugins/' . $plugin;
+}
+
+/**
+ * Implements hook_ctools_plugin_post_alter().
+ *
+ * @param $plugin
+ * @param $info
+ */
+function iot_theme_layout_ctools_plugin_post_alter(&$plugin, &$info) {
+  // Switch Panopoly Layouts to Radix Layouts.
+
+}

@@ -1,0 +1,106 @@
+.pane-block {
+  position: relative;
+}
+
+.pane-title {
+  background-color: $color-primary;
+  color: $white;
+  display: inline-block;
+  font-size: rem(14px);
+  line-height: 1;
+  margin: rem(20px 0 20px 0);
+  padding: rem(8px 10px);
+
+  &:after {
+    background-color: $color-primary;
+    bottom: auto;
+    content: "";
+    height: 3px;
+    left: 0;
+    margin-top: rem(8px);
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.title {
+  &-orange {
+    .pane-title {
+      background-color: $orange;
+
+      &:after {
+        background-color: $orange;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  &-light-blue {
+    .pane-title {
+      background-color: $light-blue;
+
+      &:after {
+        background-color: $light-blue;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $light-blue;
+      }
+    }
+  }
+
+  &-red {
+    .pane-title {
+      background-color: $red;
+
+      &:after {
+        background-color: $red;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &-green {
+    .pane-title {
+      background-color: $green;
+
+      &:after {
+        background-color: $green;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &-aqua {
+    .pane-title {
+      background-color: $aqua;
+
+      &:after {
+        background-color: $aqua;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $aqua;
+      }
+    }
+  }
+}

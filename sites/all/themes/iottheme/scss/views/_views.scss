@@ -1,0 +1,63 @@
+@import 'views-attach-to-menu';
+@import 'views-content-bottom';
+@import 'views-content-align';
+@import 'views-content-inside';
+@import 'views-post-attach-to-page';
+@import 'views-taxonomy-list-term';
+
+.views-field-title {
+  color: $gray-11;
+
+  a {
+    color: $gray-11;
+  }
+}
+
+ul.pager {
+  padding: rem(0 15px);
+
+  > li {
+    color: $color-pager;
+    margin-right: rem(7px);
+    position: relative;
+  }
+
+  .pager-current {
+    display: none;
+  }
+
+  .pager-previous,
+  .pager-next {
+    @extend .fa;
+    border: rem(1px) solid $color-line;
+    float: left;
+    height: rem(25px);
+    line-height: rem(25px);
+    width: rem(25px);
+
+    > a {
+      background: none;
+      border: none;
+      bottom: 0;
+      cursor: pointer;
+      height: 100%;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      text-indent: rem(-99999px);
+      top: 0;
+      width: 100%;
+      z-index: 9;
+    }
+  }
+
+  .pager-previous {
+    @extend .fa-angle-left;
+  }
+
+  .pager-next {
+    @extend .fa-angle-right;
+  }
+}

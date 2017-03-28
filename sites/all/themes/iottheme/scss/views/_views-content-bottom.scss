@@ -1,0 +1,30 @@
+.views-content-bottom {
+  > .view-content {
+    .group-media-image {
+      margin-bottom: rem(7px);
+    }
+
+    .views-field-title {
+      font-size: rem(13px);
+      font-weight: 500;
+    }
+
+    .views-field-created {
+      color: $gray-aa;
+      font-size: rem(11px);
+    }
+  }
+}
+
+.menu-attach-block-wrapper {
+  .views-content-bottom {
+    .view-content {
+      @extend .row;
+      margin: 0;
+
+      > .views-row {
+        @extend .col-md-3;
+      }
+    }
+  }
+}
