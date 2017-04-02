@@ -1,0 +1,53 @@
+.views-page-post-list {
+  > .view-content {
+    margin-left: rem(-23px);
+    margin-right: rem(-23px);
+    overflow: hidden;
+
+    > .views-row {
+      float: left;
+      margin-bottom: rem(23px);
+      padding-left: rem(23px);
+      padding-right: rem(23px);
+      width: 33.3333%;
+
+      &:nth-of-type(3n) {
+        float: right;
+      }
+
+      &:nth-of-type(3n+1) {
+        clear: both;
+      }
+
+      .views-field-title {
+        color: $gray-11;
+        font-size: rem(21px);
+        margin-bottom: rem(5px);
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: $color-link;
+          }
+        }
+      }
+
+      .views-field-created {
+        margin-bottom: rem(10px);
+      }
+    }
+  }
+
+  ul.pager {
+    clear: both;
+
+    li {
+      float: none !important;
+
+      &.pager-current {
+        display: inline-block;
+      }
+    }
+  }
+}

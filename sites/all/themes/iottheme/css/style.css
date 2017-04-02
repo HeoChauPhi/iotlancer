@@ -9590,6 +9590,38 @@ header.navbar-default {
       color: #ffffff;
       text-decoration: none; }
 
+.views-page-post-list > .view-content {
+  margin-left: -1.64286rem;
+  margin-right: -1.64286rem;
+  overflow: hidden; }
+  .views-page-post-list > .view-content > .views-row {
+    float: left;
+    margin-bottom: 1.64286rem;
+    padding-left: 1.64286rem;
+    padding-right: 1.64286rem;
+    width: 33.3333%; }
+    .views-page-post-list > .view-content > .views-row:nth-of-type(3n) {
+      float: right; }
+    .views-page-post-list > .view-content > .views-row:nth-of-type(3n+1) {
+      clear: both; }
+    .views-page-post-list > .view-content > .views-row .views-field-title {
+      color: #111111;
+      font-size: 1.5rem;
+      margin-bottom: 0.35714rem; }
+      .views-page-post-list > .view-content > .views-row .views-field-title a {
+        color: inherit; }
+        .views-page-post-list > .view-content > .views-row .views-field-title a:hover {
+          color: #dd3333; }
+    .views-page-post-list > .view-content > .views-row .views-field-created {
+      margin-bottom: 0.71429rem; }
+
+.views-page-post-list ul.pager {
+  clear: both; }
+  .views-page-post-list ul.pager li {
+    float: none !important; }
+    .views-page-post-list ul.pager li.pager-current {
+      display: inline-block; }
+
 .views-field-title {
   color: #111111; }
   .views-field-title a {
