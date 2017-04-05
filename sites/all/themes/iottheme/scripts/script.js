@@ -16,6 +16,7 @@ var Drupal = Drupal || {};
       fade: true,
       autoplay: true,
       autoplaySpeed: 2000,
+      adaptiveHeight: true,
       cssEase: 'linear'
     });
   }
@@ -67,6 +68,7 @@ var Drupal = Drupal || {};
     // Call to function
     HeaderSearch();
     SildeFade('.views-slide-oneitem .view-content');
+    SildeFade('.field-slideshow-detail .field-items');
     SildeCarousel('.block-news-update .views-custom-control > .view-content > .views-row', 2);
     ImageBackground('.block-feature-post .field-name-field-block-get-nodes > .field-items > .field-item');
   });

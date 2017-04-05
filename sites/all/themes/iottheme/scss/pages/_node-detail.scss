@@ -1,0 +1,81 @@
+.page-node {
+  .region-content {
+    margin-left: rem(-15px);
+    margin-right: rem(-15px);
+  
+    // Fields Images Slide
+    .field-slideshow-detail {
+      margin-bottom: rem(50px);
+
+      .field-items {
+        position: relative;
+      }
+
+      .field-item {
+        display: none;
+        min-height: rem(1px);
+        text-align: center;
+
+        &:first-of-type,
+        &.slick-slide {
+          display: block !important;
+        }
+
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      .slick-arrow {
+        @extend .fa;
+        background: rgba($black, 0.6);
+        border: rem(1px) solid $black;
+        height: rem(70px);
+        margin-top: rem(-35px);
+        position: absolute;
+        text-indent: rem(-9999999px);
+        top: 50%;
+        width: rem(30px);
+        z-index: 99;
+
+        &:hover {
+          background: rgba($black, 0.8);
+        }
+
+        &:before {
+          float: left;
+          text-indent: 0;
+          color: #fff;
+          text-align: center;
+          width: 100%;
+          line-height: inherit;
+        }
+      }
+
+      .slick-prev {
+        @extend .fa-angle-left;
+        left: 0;
+      }
+
+      .slick-next {
+        @extend .fa-angle-right;
+        right: 0;
+      }
+    }
+
+    // Fields Category
+    .field-categories-detail {
+      a {
+        background-color: $color-six;
+        color: $white;
+        font-size: rem(10px);
+        padding: rem(3px 6px);
+        margin-right: rem(5px);
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}

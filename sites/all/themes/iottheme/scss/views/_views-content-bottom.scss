@@ -1,5 +1,19 @@
 .views-content-bottom {
   > .view-content {
+    > .views-row {
+      position: relative;
+    }
+
+    .views-field-content-type {
+      background-color: rgba($black, 0.7);
+      border: rem(1px) solid $black;
+      color: $white;
+      left: rem(10px);
+      padding: rem(3px 5px);
+      position: absolute;
+      top: rem(10px);
+    }
+
     .group-media-image {
       margin-bottom: rem(7px);
     }
