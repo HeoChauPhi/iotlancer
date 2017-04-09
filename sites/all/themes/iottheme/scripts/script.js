@@ -14,7 +14,7 @@ var Drupal = Drupal || {};
       infinite: true,
       speed: 500,
       fade: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       adaptiveHeight: true,
       cssEase: 'linear'
@@ -70,6 +70,7 @@ var Drupal = Drupal || {};
     SildeFade('.views-slide-oneitem .view-content');
     SildeFade('.field-slideshow-detail .field-items');
     SildeCarousel('.block-news-update .views-custom-control > .view-content > .views-row', 2);
+    SildeCarousel('.field-case-studies-slide', 3);
     ImageBackground('.block-feature-post .field-name-field-block-get-nodes > .field-items > .field-item');
   });
 

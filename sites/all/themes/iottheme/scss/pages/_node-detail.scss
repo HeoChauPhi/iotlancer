@@ -65,6 +65,8 @@
 
     // Fields Category
     .field-categories-detail {
+      margin-bottom: rem(10px);
+
       a {
         background-color: $color-six;
         color: $white;
@@ -75,6 +77,56 @@
         &:hover {
           opacity: 0.9;
         }
+      }
+    }
+
+    // Field Title
+    .field-name-title {
+      h2 {
+        color: $gray-11;
+        font-size: rem(41px);
+        font-weight: 400;
+        line-height: rem(50px);
+        margin: rem(0 0 7px);
+        word-wrap: break-word;
+      }
+    }
+
+    // Field Post date
+    .field-name-post-date {
+      color: $gray-44;
+      font-size: rem(11px);
+      margin-bottom: rem(16px);
+    }
+
+    // Field Share this
+    .sharethis-inline-share-buttons {
+      margin-bottom: rem(21px);
+    }
+
+    // Field Body
+    .field-name-body {
+      margin-top: rem(21px);
+      padding-bottom: rem(16px);
+    }
+
+    // Field Case Study
+    .custom-pane-title {
+      &:after {
+        margin-top: rem(22px);
+      }
+    }
+
+    .field-case-studies-slide {
+      margin: rem(0 -8px);
+
+      > .entity-field-collection-item {
+        display: none;
+        float: left;
+      }
+
+      .slick-slide {
+        padding: rem(0 8px);
       }
     }
   }

@@ -9715,11 +9715,38 @@ h1.page-header {
       left: 0; }
     .page-node .region-content .field-slideshow-detail .slick-next {
       right: 0; }
-  .page-node .region-content .field-categories-detail a {
-    background-color: #005eb8;
-    color: #ffffff;
-    font-size: 0.71429rem;
-    padding: 0.21429rem 0.42857rem;
-    margin-right: 0.35714rem; }
-    .page-node .region-content .field-categories-detail a:hover {
-      opacity: 0.9; }
+  .page-node .region-content .field-categories-detail {
+    margin-bottom: 0.71429rem; }
+    .page-node .region-content .field-categories-detail a {
+      background-color: #005eb8;
+      color: #ffffff;
+      font-size: 0.71429rem;
+      padding: 0.21429rem 0.42857rem;
+      margin-right: 0.35714rem; }
+      .page-node .region-content .field-categories-detail a:hover {
+        opacity: 0.9; }
+  .page-node .region-content .field-name-title h2 {
+    color: #111111;
+    font-size: 2.92857rem;
+    font-weight: 400;
+    line-height: 3.57143rem;
+    margin: 0rem 0rem 0.5rem;
+    word-wrap: break-word; }
+  .page-node .region-content .field-name-post-date {
+    color: #444444;
+    font-size: 0.78571rem;
+    margin-bottom: 1.14286rem; }
+  .page-node .region-content .sharethis-inline-share-buttons {
+    margin-bottom: 1.5rem; }
+  .page-node .region-content .field-name-body {
+    margin-top: 1.5rem;
+    padding-bottom: 1.14286rem; }
+  .page-node .region-content .custom-pane-title:after {
+    margin-top: 1.57143rem; }
+  .page-node .region-content .field-case-studies-slide {
+    margin: 0rem -0.57143rem; }
+    .page-node .region-content .field-case-studies-slide > .entity-field-collection-item {
+      display: none;
+      float: left; }
+    .page-node .region-content .field-case-studies-slide .slick-slide {
+      padding: 0rem 0.57143rem; }
