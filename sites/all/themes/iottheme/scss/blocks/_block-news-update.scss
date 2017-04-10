@@ -1,5 +1,7 @@
 .block-news-update {
   .views-custom-control {
+    overflow: hidden;
+
     > .view-content {
       > .views-row {
         margin: rem(0 -24px);

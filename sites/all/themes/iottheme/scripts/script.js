@@ -64,6 +64,21 @@ var Drupal = Drupal || {};
     });
   }
 
+  function colorBox($classes) {
+    var class_item = $classes;
+    $(class_item).colorbox({iframe:true, innerWidth:640, innerHeight:390});
+  }
+
+  function ovrideImageUrl() {
+    var wrapper_item = $('.field-case-studies-slide .group-media-content');
+    wrapper_item.each(function() {
+      var wrapper_image = $(this).find('> .field-type-image img');
+      var wrapper_video = $(this).find('> .field-type-video-embed-field .field-item');
+      wrapper_image.wrap('<a class="video-colorbox" href="'+wrapper_video.text()+'"></a>');
+      colorBox('.video-colorbox');
+    });
+  }
+
   $(document).ready(function() {
     // Call to function
     HeaderSearch();
@@ -72,6 +87,7 @@ var Drupal = Drupal || {};
     SildeCarousel('.block-news-update .views-custom-control > .view-content > .views-row', 2);
     SildeCarousel('.field-case-studies-slide', 3);
     ImageBackground('.block-feature-post .field-name-field-block-get-nodes > .field-items > .field-item');
+    ovrideImageUrl();
   });
 
   $(window).load(function() {
