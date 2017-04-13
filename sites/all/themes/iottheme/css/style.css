@@ -9238,22 +9238,42 @@ header.navbar-default {
   border: none;
   color: #ffffff;
   min-height: 5.71429rem;
-  /* Logo. */
-  /* Block Search. */ }
-  header.navbar-default:before, header.navbar-default:after {
+  /* &:before,
+  &:after {
     content: "";
     height: 80px;
     position: absolute;
     top: 0%;
-    opacity: 0.5; }
-  header.navbar-default:before {
-    background: url("../images/header-left.png") no-repeat scroll center center transparent;
+    opacity: 0.5;
+  }
+
+  &:before {
+    background: url('../images/header-left.png') no-repeat scroll center center transparent;
     left: -10%;
-    width: 407px; }
-  header.navbar-default:after {
-    background: url("../images/header-right.png") no-repeat scroll center center transparent;
+    width: 407px;
+  }
+
+  &:after {
+    background: url('../images/header-right.png') no-repeat scroll center center transparent;
     right: 0;
-    width: 252px; }
+    width: 252px;
+  } */
+  /* Logo. */
+  /* Block Search. */ }
+  header.navbar-default:before {
+    background-size: cover;
+    background: url("../images/bg_custom.jpg") no-repeat scroll center center transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 42.85714rem;
+    left: 0;
+    max-height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; }
   header.navbar-default > .container {
     position: relative;
     z-index: 999; }
@@ -9287,23 +9307,43 @@ header.navbar-default {
   padding-bottom: 1.42857rem;
   padding-top: 3.85714rem;
   position: relative;
-  z-index: 10; }
-  .footer-panel:before, .footer-panel:after {
+  z-index: 10;
+  /* &:before,
+  &:after {
     bottom: 0;
     content: "";
     height: 100%;
     opacity: 0.5;
     position: absolute;
     top: 0;
-    z-index: -1; }
-  .footer-panel:before {
+    z-index: -1;
+  }
+
+  &:before {
     background: url("../images/footer-left.png") no-repeat scroll center bottom transparent;
     left: -20%;
-    width: 35.92857rem; }
-  .footer-panel:after {
+    width: rem(503px);
+  }
+
+  &:after {
     background: url("../images/footer-right.png") no-repeat scroll center bottom transparent;
     right: -20%;
-    width: 69rem; }
+    width: rem(966px);
+  } */ }
+  .footer-panel:before {
+    background-size: cover;
+    background: url("../images/bg_custom.jpg") no-repeat scroll center center transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 42.85714rem;
+    left: 0;
+    max-height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; }
   .footer-panel .block-title {
     font-size: 1.28571rem;
     font-weight: 700;

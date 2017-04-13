@@ -74,7 +74,8 @@ var Drupal = Drupal || {};
     wrapper_item.each(function() {
       var wrapper_image = $(this).find('> .field-type-image img');
       var wrapper_video = $(this).find('> .field-type-video-embed-field .field-item');
-      wrapper_image.wrap('<a class="video-colorbox" href="'+wrapper_video.text()+'"></a>');
+      var video_embed = wrapper_video.text().replace("watch?v=", "embed/");
+      wrapper_image.wrap('<a class="video-colorbox" href="'+video_embed+'"></a>');
       colorBox('.video-colorbox');
     });
   }

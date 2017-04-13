@@ -19,7 +19,7 @@
   position: relative;
   z-index: 10;
 
-  &:before,
+  /* &:before,
   &:after {
     bottom: 0;
     content: "";
@@ -40,6 +40,22 @@
     background: url("../images/footer-right.png") no-repeat scroll center bottom transparent;
     right: -20%;
     width: rem(966px);
+  } */
+
+  &:before {
+    background-size: cover;
+    background: url('../images/bg_custom.jpg') no-repeat scroll center center transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: rem(600px);
+    left: 0;
+    max-height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
   }
 
   .block-title {
