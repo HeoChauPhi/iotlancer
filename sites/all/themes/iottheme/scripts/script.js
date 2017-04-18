@@ -4,7 +4,27 @@ var Drupal = Drupal || {};
   "use strict";
 
   function HeaderSearch() {
-    $('.region-navigation .block-search').before('<div class="dropdow-search-buttom"><i class="fa fa-search "></i></div>');
+    $('.region-navigation .block-search').before('<div class="dropdow-search-buttom"><i class="fa fa-search"></i></div>');
+    $('.dropdow-search-buttom').click(function(){
+      $(this).find('i.fa').toggleClass('fa-search fa-times');
+      $(this).next('.region-navigation .block-search').toggleClass('show');
+    });
+  }
+
+  function MenuFixed() {
+    var header_height = $('.header-top').outerHeight(true);
+    var header_wrapper = $('header.navbar').height();
+
+    $(window).scroll(function(){
+      var window_scroll = $(window).scrollTop();
+
+      if (window_scroll >= header_height)
+        $('header.navbar').css({'height': header_wrapper}),
+        $('.header-inner').addClass('fixed');
+      else
+        $('header.navbar').css({'height': 'inherit'}),
+        $('.header-inner').removeClass('fixed');
+    });
   }
 
   function SildeFade($name) {
@@ -55,7 +75,7 @@ var Drupal = Drupal || {};
       var parent_img = $(this).find('div[class*=image] img');
       var path_img = parent_img.attr('src');
       parent_img.hide();
-      $(this).css({
+      $(this).find('.field-type-image').css({
         'background-image': 'url(' + path_img + ')',
         'background-size': 'cover',
         'background-repeat': 'no-repeat',
@@ -82,6 +102,7 @@ var Drupal = Drupal || {};
 
   $(document).ready(function() {
     // Call to function
+    MenuFixed();
     HeaderSearch();
     SildeFade('.views-slide-oneitem .view-content');
     SildeFade('.field-slideshow-detail .field-items');

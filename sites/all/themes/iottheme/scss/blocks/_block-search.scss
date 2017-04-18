@@ -1,0 +1,19 @@
+.form-search {
+  .input-group {
+    .form-text {
+      border-color: $gray-e1;
+      border-radius: 0;
+      box-shadow: none;
+      width: rem(235px);
+    }
+
+    button[type="submit"] {
+      background-color: $gray-22;
+      color: $white;
+
+      &:hover {
+        background-color: $gray-6x;
+      }
+    }
+  }
+}

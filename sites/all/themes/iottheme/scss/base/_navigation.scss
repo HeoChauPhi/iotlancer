@@ -41,11 +41,19 @@
 
         > ul.dropdown-menu,
         > .menu-attach-block-wrapper {
-          display: block;
+          @include transition(opacity 0.5s ease);
+          opacity: 1;
+          visibility: visible;
+          z-index: 998;
         }
       }
 
       ul.dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+
         li {
           a.active {
             color: $white;
@@ -85,6 +93,14 @@
       }
     }
   }
+
+  .header-inner.fixed {
+    .navbar-nav > li > a {
+      line-height: rem(49px);
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
 }
 
 .block-menu-footer {
@@ -107,4 +123,11 @@
       }
     }
   }
+}
+
+a.menu-attach-block-drop-link ~ .menu-attach-block-wrapper {
+  display: block !important;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
 }

@@ -8,6 +8,20 @@
   @extend .clearfix;
 }
 
+.header-inner.fixed {
+  left: 0;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  z-index: 999;
+}
+
+html body.admin-menu {
+  .header-inner.fixed {
+    top: rem(29px);
+  }
+}
+
 .navbar-header {
   position: relative;
   z-index: 998;
@@ -41,20 +55,24 @@ header.navbar-default {
     width: 252px;
   } */
 
-  &:before {
-    background-size: cover;
-    background: url('../images/bg_custom.jpg') no-repeat scroll center center transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: rem(600px);
-    left: 0;
-    max-height: 100%;
-    opacity: 0.5;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
+  .header-inner {
+    background-color: $bg-header;
+
+     &:before {
+      background-size: cover;
+      background: url('../images/bg_custom.jpg') no-repeat scroll center center transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: rem(600px);
+      left: 0;
+      max-height: 100%;
+      opacity: 0.5;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
   }
 
   > .container {
@@ -71,6 +89,14 @@ header.navbar-default {
     }
   }
 
+  .header-inner.fixed {
+    .logo {
+      img {
+        max-height: rem(48px);
+      }
+    }
+  }
+
   /* Block Search. */
   .region-navigation {
     float: right;
@@ -84,8 +110,33 @@ header.navbar-default {
     }
 
     .block-search {
+      background-color: $white;
+      box-shadow: rem(0 2px 6px) rgba($black, 0.2);
       display: none;
+      margin: 0 !important;
+      padding: rem(20px);
       position: absolute;
+      right: 0;
+      top: 100%;
+      z-index: 999;
+
+      &.show {
+        display: block;
+      }
+
+      .form-actions {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .header-inner.fixed {
+    .region-navigation {
+      min-height: rem(48px);
+
+      .dropdow-search-buttom {
+        line-height: rem(48px);
+      }
     }
   }
 }
