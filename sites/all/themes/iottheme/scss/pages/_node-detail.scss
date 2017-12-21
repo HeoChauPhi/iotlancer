@@ -3,6 +3,15 @@
     margin-left: rem(-15px);
     margin-right: rem(-15px);
   
+    .node[class*="node_detail"] {
+      position: relative;
+    }
+
+    // Custom field
+    .fields-custom-control {
+      overflow: hidden;
+    }
+
     // Fields Images Slide
     .field-slideshow-detail {
       margin-bottom: rem(50px);
@@ -65,6 +74,8 @@
 
     // Fields Category
     .field-categories-detail {
+      margin-bottom: rem(10px);
+
       a {
         background-color: $color-six;
         color: $white;
@@ -76,6 +87,109 @@
           opacity: 0.9;
         }
       }
+    }
+
+    // Field Title
+    .field-name-title {
+      h2 {
+        color: $gray-11;
+        font-size: rem(41px);
+        font-weight: 400;
+        line-height: rem(50px);
+        margin: rem(0 0 7px);
+        word-wrap: break-word;
+      }
+    }
+
+    // Field Post date
+    .field-name-post-date {
+      color: $gray-44;
+      font-size: rem(11px);
+      margin-bottom: rem(16px);
+    }
+
+    // Field Share this
+    .sharethis-inline-share-buttons {
+      margin-bottom: rem(21px);
+    }
+
+    // Field Body
+    .field-name-body {
+      margin-top: rem(21px);
+      padding-bottom: rem(16px);
+    }
+
+    // Field Case Study
+    .custom-pane-title {
+      &:after {
+        margin-top: rem(22px);
+      }
+    }
+
+    .field-case-studies-slide {
+      margin: rem(0 -10px 48px -10px);
+
+      > .entity-field-collection-item {
+        display: none;
+        float: left;
+      }
+
+      .slick-slide {
+        margin-bottom: rem(17px);
+        padding: rem(0 10px);
+      }
+
+      &.slick-slider {
+        position: relative;
+        padding-bottom: rem(25px);
+
+        > .slick-arrow {
+          @extend .fa;
+          background-color: transparent;
+          border: rem(1px) solid $color-line;
+          bottom: 0;
+          height: rem(25px);
+          left: rem(10px);
+          line-height: rem(23px);
+          position: absolute;
+          text-indent: rem(-99999px);
+          width: rem(25px);
+          z-index: 9;
+
+          &:before {
+            float: left;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            text-align: center;
+            text-indent: 0;
+            top: 0;
+            width: 100%;
+          }
+
+          &.slick-prev {
+            @extend .fa-angle-left;
+          }
+
+          &.slick-next {
+            @extend .fa-angle-right;
+            left: rem(25px + 10px + 7px);
+          }
+        }
+      }
+
+      .group-media-content {
+        margin-bottom: rem(7px);
+
+        .field-type-video-embed-field {
+          display: none;
+        }
+      }
+    }
+
+    // Field Download
+    .fields-type-download {
+      margin-bottom: rem(20px);
     }
   }
 }

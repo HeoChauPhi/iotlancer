@@ -1,0 +1,64 @@
+.views-latest-post {
+  > .view-filters {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .views-exposed-widget {
+      padding: 0;
+
+      > label {
+        cursor: pointer;
+        font-size: rem(14px);
+        font-weight: normal;
+        line-height: 1;
+        margin: rem(20px 0 3px 0);
+        padding: rem(8px 10px 8px 15px);
+      }
+
+      > .views-widget {
+        background: $white;
+        border: rem(1px) solid $gray-ea;
+        border-top: none;
+        display: none;
+        padding: rem(8px);
+        position: absolute;
+        right: 0;
+        width: rem(170px);
+
+        .form-item {
+          text-align: right;
+
+          > .form-item {
+            a {
+              color: $gray-77;
+              display: block;
+              padding: rem(3px 0);
+
+              &:hover {
+                color: $color-six;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .views-exposed-widget {
+        > label {
+          background-color: $color-primary;
+          color: $white;
+        }
+
+        > .views-widget {
+          display: block;
+        }
+      }
+    }
+  }
+
+  > ul.pager {
+    padding-left: 0;
+  }
+}
